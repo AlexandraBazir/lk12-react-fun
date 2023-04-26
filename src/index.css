@@ -1,0 +1,38 @@
+body {
+	margin: 0;
+	font-family: "Nunito", "Arial", "Helvetica", sans-serif;
+}
+h1 {
+/*	height: 100vh;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	color: #61dafb;
+}
+h1 img {
+	height: 50px;
+	animation: rotate 3s linear infinite;
+}
+@keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(6, 50px);
+	grid-auto-rows: 50px;
+	gap: 10px;
+	justify-content: center;
+}
+
+.num {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+	box-shadow: 0 0 2px 0 #000;
+}
